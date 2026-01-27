@@ -32,3 +32,26 @@ document.querySelectorAll('.nav-link').forEach(link => {
 });
 
 console.log('Portfolio website loaded successfully!');
+
+
+// Contact Popup Toggle
+function toggleContactPopup() {
+    const popup = document.getElementById('contactPopup');
+    popup.classList.toggle('active');
+}
+
+// Close popup when clicking outside
+document.addEventListener('click', function(e) {
+    const popup = document.getElementById('contactPopup');
+    if (e.target === popup) {
+        popup.classList.remove('active');
+    }
+});
+
+// Close popup with Escape key
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') {
+        const popup = document.getElementById('contactPopup');
+        popup.classList.remove('active');
+    }
+});

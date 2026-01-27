@@ -1,4 +1,4 @@
-/* Modern Light Theme Portfolio CSS */
+/* Colorless CV-Style Portfolio CSS */
 * {
     margin: 0;
     padding: 0;
@@ -6,14 +6,14 @@
 }
 
 :root {
-    --primary: #2563eb;
-    --secondary: #64748b;
-    --accent: #f59e0b;
+    --primary: #333333;
+    --secondary: #666666;
+    --accent: #444444;
     --bg-light: #ffffff;
-    --bg-section: #f8fafc;
-    --text-dark: #1e293b;
-    --text-light: #64748b;
-    --border: #e2e8f0;
+    --bg-section: #f5f5f5;
+    --text-dark: #222222;
+    --text-light: #555555;
+    --border: #dddddd;
 }
 
 body {
@@ -34,11 +34,12 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
-    background: rgba(255, 255, 255, 0.95);
+    background: rgba(255, 255, 255, 0.98);
     backdrop-filter: blur(10px);
     box-shadow: 0 1px 3px rgba(0,0,0,0.1);
     z-index: 1000;
     padding: 1rem 0;
+    border-bottom: 1px solid var(--border);
 }
 
 .navbar .container {
@@ -50,7 +51,7 @@ body {
 .logo {
     font-size: 1.5rem;
     font-weight: 700;
-    color: var(--primary);
+    color: var(--text-dark);
     text-decoration: none;
 }
 
@@ -77,7 +78,7 @@ body {
     display: flex;
     align-items: center;
     padding: 100px 0 50px;
-    background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+    background: #ffffff;
 }
 
 .hero-content {
@@ -131,23 +132,23 @@ body {
 }
 
 .btn-primary {
-    background: var(--primary);
+    background: var(--text-dark);
     color: white;
 }
 
 .btn-primary:hover {
-    background: #1d4ed8;
+    background: #000000;
     transform: translateY(-2px);
 }
 
 .btn-secondary {
     background: white;
-    color: var(--primary);
-    border: 2px solid var(--primary);
+    color: var(--text-dark);
+    border: 2px solid var(--text-dark);
 }
 
 .btn-secondary:hover {
-    background: var(--primary);
+    background: var(--text-dark);
     color: white;
 }
 
@@ -164,13 +165,14 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--primary);
+    color: var(--text-dark);
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     transition: all 0.3s;
+    border: 1px solid var(--border);
 }
 
 .social-icon:hover {
-    background: var(--primary);
+    background: var(--text-dark);
     color: white;
     transform: translateY(-3px);
 }
@@ -181,11 +183,12 @@ body {
     padding: 2rem;
     box-shadow: 0 10px 30px rgba(0,0,0,0.1);
     text-align: center;
+    border: 1px solid var(--border);
 }
 
 .profile-img i {
     font-size: 8rem;
-    color: var(--primary);
+    color: var(--text-dark);
 }
 
 .profile-info {
@@ -201,6 +204,7 @@ body {
     border-radius: 20px;
     font-size: 0.9rem;
     color: var(--text-dark);
+    border: 1px solid var(--border);
 }
 
 /* About Section */
@@ -233,7 +237,7 @@ body {
 }
 
 .highlights i {
-    color: var(--primary);
+    color: var(--text-dark);
     margin-right: 0.5rem;
 }
 
@@ -249,23 +253,25 @@ body {
     padding: 1.5rem;
     background: var(--bg-section);
     border-radius: 12px;
+    border: 1px solid var(--border);
 }
 
 .stat-item h3 {
     font-size: 2rem;
-    color: var(--primary);
+    color: var(--text-dark);
 }
 
 .image-wrapper {
-    background: linear-gradient(135deg, var(--primary) 0%, #1d4ed8 100%);
+    background: var(--bg-section);
     border-radius: 20px;
     padding: 3rem;
     text-align: center;
+    border: 1px solid var(--border);
 }
 
 .image-wrapper i {
     font-size: 6rem;
-    color: white;
+    color: var(--text-dark);
 }
 
 /* Skills Section */
@@ -286,6 +292,7 @@ body {
     border-radius: 12px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.05);
     transition: all 0.3s;
+    border: 1px solid var(--border);
 }
 
 .skill-card:hover {
@@ -295,12 +302,13 @@ body {
 
 .skill-icon {
     font-size: 3rem;
-    color: var(--primary);
+    color: var(--text-dark);
     margin-bottom: 1rem;
 }
 
 .skill-card h3 {
     margin-bottom: 0.5rem;
+    color: var(--text-dark);
 }
 
 /* Projects Section */
@@ -330,7 +338,7 @@ body {
 
 .project-header i {
     font-size: 3rem;
-    color: var(--primary);
+    color: var(--text-dark);
     margin-bottom: 1rem;
 }
 
@@ -346,10 +354,11 @@ body {
     padding: 0.25rem 0.75rem;
     border-radius: 20px;
     font-size: 0.85rem;
+    border: 1px solid var(--border);
 }
 
 .project-link {
-    color: var(--primary);
+    color: var(--text-dark);
     text-decoration: none;
     font-weight: 600;
     display: inline-flex;
@@ -382,11 +391,12 @@ body {
     padding: 2rem;
     border-radius: 12px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    border: 1px solid var(--border);
 }
 
 .contact-card i {
     font-size: 2.5rem;
-    color: var(--primary);
+    color: var(--text-dark);
     margin-bottom: 1rem;
 }
 
@@ -399,7 +409,7 @@ body {
 }
 
 .footer i {
-    color: #ef4444;
+    color: #888888;
 }
 
 /* Responsive */

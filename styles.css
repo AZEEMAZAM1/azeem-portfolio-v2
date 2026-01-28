@@ -25,14 +25,14 @@ body {
 
 /* Watermark Background */
 body::before {
-    content: 'MUHAMMAD AZEEM';
+    content: 'MUHAMMAD AZEEM • PORTFOLIO';
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) rotate(-45deg);
     font-size: 120px;
     font-weight: 900;
-    color: rgba(0, 0, 0, 0.03);
+    color: rgba(0, 0, 0, 0.08);
     white-space: nowrap;
     pointer-events: none;
     letter-spacing: 20px;

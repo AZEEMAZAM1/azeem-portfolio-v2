@@ -3,298 +3,261 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Muhammad Azeem - Mobile App Developer CV</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            font-family: 'Georgia', 'Times New Roman', serif;
-            background: #ffffff;
-            color: #000000;
-            line-height: 1.6;
-        }
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 40px 20px;
-        }
-        header {
-            text-align: center;
-            padding-bottom: 30px;
-            border-bottom: 2px solid #000000;
-            margin-bottom: 40px;
-        }
-        h1 {
-            font-size: 36px;
-            margin-bottom: 10px;
-            letter-spacing: 2px;
-        }
-        .subtitle {
-            font-size: 18px;
-            opacity: 0.7;
-            margin-bottom: 20px;
-        }
-        .contact-info {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            flex-wrap: wrap;
-            font-size: 14px;
-            opacity: 0.8;
-        }
-        .contact-info a {
-            color: #000000;
-            text-decoration: none;
-            border-bottom: 1px solid rgba(0,0,0,0.3);
-        }
-        .contact-info a:hover {
-            opacity: 0.7;
-        }
-        section {
-            margin-bottom: 40px;
-            padding-bottom: 30px;
-            border-bottom: 1px solid rgba(0,0,0,0.2);
-        }
-        section:last-of-type {
-            border-bottom: none;
-        }
-        h2 {
-            font-size: 24px;
-            margin-bottom: 15px;
-            letter-spacing: 1px;
-            opacity: 0.9;
-        }
-        h3 {
-            font-size: 18px;
-            margin-bottom: 8px;
-            opacity: 0.85;
-        }
-        .job-title {
-            font-weight: bold;
-            margin-bottom: 5px;
-        }
-        .company {
-            font-style: italic;
-            opacity: 0.7;
-            margin-bottom: 5px;
-        }
-        .date {
-            font-size: 14px;
-            opacity: 0.6;
-            margin-bottom: 10px;
-        }
-        ul {
-            margin-left: 20px;
-            margin-top: 10px;
-        }
-        li {
-            margin-bottom: 8px;
-            opacity: 0.8;
-        }
-        .skills-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 20px;
-            margin-top: 15px;
-        }
-        .skill-category {
-            opacity: 0.85;
-        }
-        .skill-category strong {
-            display: block;
-            margin-bottom: 5px;
-        }
-        .highlights-grid {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 20px;
-            margin-top: 20px;
-            text-align: center;
-        }
-        .highlight-item {
-            padding: 20px;
-            border: 1px solid rgba(0,0,0,0.2);
-            background: rgba(0,0,0,0.03);
-        }
-        .highlight-number {
-            font-size: 28px;
-            font-weight: bold;
-            margin-bottom: 5px;
-        }
-        .highlight-label {
-            font-size: 12px;
-            opacity: 0.7;
-        }
-        @media (max-width: 768px) {
-            .skills-grid {
-                grid-template-columns: 1fr;
-            }
-            .highlights-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
-    </style>
+    <title>Muhammad Azeem - Curriculum Vitae</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Georgia&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
-        <header>
-            <h1>MUHAMMAD AZEEM</h1>
-            <p class="subtitle">Mobile App Developer | React Native & Flutter Specialist</p>
-            <div class="contact-info">
-                <span>📍 London, United Kingdom</span>
-                <span>|</span>
-                <a href="mailto:aforazeem5@gmail.com">📧 aforazeem5@gmail.com</a>
-                <span>|</span>
-                <a href="tel:+447362299549">📞 07362299549</a>
-                <span>|</span>
-                <a href="https://linkedin.com/in/muhammad-azeem5" target="_blank">LinkedIn</a>
-                <span>|</span>
-                <a href="https://github.com/AZEEMAZAM1" target="_blank">GitHub</a>
-                <span>|</span>
-                <a href="https://azeem.onl" target="_blank">azeem.onl</a>
+        <!-- CV Header -->
+        <header class="cv-header">
+            <h1 class="cv-name">Muhammad Azeem</h1>
+            <p class="cv-title">Mobile App Developer | Full Stack Developer | IT Support</p>
+            <div class="cv-contact">
+                <span><i class="fas fa-map-marker-alt"></i> London, UK</span>
+                <span><a href="mailto:aforazeem5@gmail.com"><i class="fas fa-envelope"></i> aforazeem5@gmail.com</a></span>
+                <span><a href="tel:+447362299549"><i class="fas fa-phone"></i> 07362299549</a></span>
+                <span><a href="https://linkedin.com/in/muhammad-azeem5" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></span>
+                <span><a href="https://github.com/AZEEMAZAM1" target="_blank"><i class="fab fa-github"></i> GitHub</a></span>
             </div>
         </header>
 
-        <section>
-            <h2>PROFESSIONAL HIGHLIGHTS</h2>
+        <!-- Professional Summary -->
+        <section class="cv-section">
+            <h2 class="section-title">Professional Summary</h2>
+            <p class="profile-text">
+                Ambitious and results-driven Mobile App Developer and Full Stack Developer with a BSc (Hons) in Computer Science. 
+                Specializing in React Native, Flutter, Swift, and modern web technologies. Passionate about building intelligent 
+                mobile experiences integrated with AI and ML models. Currently preparing for CCNA and CompTIA A+ certifications 
+                while actively contributing to open-source projects. Entrepreneur with a mobile app in development.
+            </p>
+        </section>
+
+        <!-- Professional Highlights -->
+        <section class="cv-section">
+            <h2 class="section-title">Professional Highlights</h2>
             <div class="highlights-grid">
-                <div class="highlight-item">
-                    <div class="highlight-number">74</div>
-                    <div class="highlight-label">GitHub Repositories</div>
+                <div class="highlight-box">
+                    <a href="https://github.com/AZEEMAZAM1" target="_blank" style="text-decoration:none;color:inherit;">
+                        <span class="highlight-number">74+</span>
+                        <span class="highlight-label">GitHub Repositories</span>
+                    </a>
                 </div>
-                <div class="highlight-item">
-                    <div class="highlight-number">500+</div>
-                    <div class="highlight-label">LinkedIn Connections</div>
+                <div class="highlight-box">
+                    <a href="https://linkedin.com/in/muhammad-azeem5" target="_blank" style="text-decoration:none;color:inherit;">
+                        <span class="highlight-number">500+</span>
+                        <span class="highlight-label">LinkedIn Connections</span>
+                    </a>
                 </div>
-                <div class="highlight-item">
-                    <div class="highlight-number">967</div>
-                    <div class="highlight-label">LinkedIn Followers</div>
+                <div class="highlight-box">
+                    <a href="https://github.com/justeattakeaway/pie" target="_blank" style="text-decoration:none;color:inherit;">
+                        <span class="highlight-number">Active</span>
+                        <span class="highlight-label">Open Source Contributor</span>
+                    </a>
                 </div>
-                <div class="highlight-item">
-                    <div class="highlight-number">Active</div>
-                    <div class="highlight-label">Open Source</div>
+                <div class="highlight-box">
+                    <span class="highlight-number">3+</span>
+                    <span class="highlight-label">Major Projects</span>
                 </div>
             </div>
         </section>
 
-        <section>
-            <h2>PROFESSIONAL SUMMARY</h2>
-            <p>Passionate Mobile App Developer with a BSc (Hons) in Computer Science, specializing in building intelligent, cross-platform mobile applications using React Native and Flutter. Experienced in AI-integrated applications, ML model integration, and ChatGPT implementation. Strong foundation in mobile application development for both iOS and Android platforms, with expertise in creating scalable, user-centric solutions. Currently preparing for CCNA and CompTIA A+ certifications while actively contributing to open-source projects.</p>
+        <!-- Education -->
+        <section class="cv-section">
+            <h2 class="section-title">Education</h2>
+            <div class="cv-item">
+                <div class="cv-item-header">
+                    <span class="cv-item-title">BSc (Hons) Computer Science</span>
+                    <span class="cv-item-date">2021 - 2024</span>
+                </div>
+                <p class="cv-item-subtitle">London South Bank University (LSBU)</p>
+                <div class="cv-item-description">
+                    <ul>
+                        <li>Specialized in Software Development and Mobile Applications</li>
+                        <li>Relevant coursework: Data Structures, Algorithms, Database Systems, Web Development</li>
+                        <li>Final Year Project: AI-integrated Mobile Application</li>
+                    </ul>
+                </div>
+            </div>
         </section>
 
-        <section>
-            <h2>TECHNICAL SKILLS</h2>
+        <!-- Technical Skills -->
+        <section class="cv-section">
+            <h2 class="section-title">Technical Skills</h2>
             <div class="skills-grid">
                 <div class="skill-category">
-                    <strong>Mobile Development:</strong>
-                    React Native, Flutter, iOS Development, Android Development, Mobile Application Architecture, Cross-Platform Development, AI Integration in Mobile Apps, ML Model Integration
+                    <h4>Mobile Development</h4>
+                    <ul class="skill-list">
+                        <li>React Native</li>
+                        <li>Flutter</li>
+                        <li>Swift / SwiftUI</li>
+                        <li>UIKit</li>
+                        <li>Objective-C</li>
+                    </ul>
                 </div>
                 <div class="skill-category">
-                    <strong>Programming Languages:</strong>
-                    JavaScript, TypeScript, C++, Go, Java, Kotlin, Python
+                    <h4>Web Development</h4>
+                    <ul class="skill-list">
+                        <li>JavaScript / TypeScript</li>
+                        <li>React.js</li>
+                        <li>HTML5 / CSS3</li>
+                        <li>Node.js</li>
+                        <li>RESTful APIs</li>
+                    </ul>
                 </div>
                 <div class="skill-category">
-                    <strong>Frameworks & Tools:</strong>
-                    React.js, Node.js, Redux.js, Firebase, AWS (Amazon Web Services)
+                    <h4>Backend & Database</h4>
+                    <ul class="skill-list">
+                        <li>Firebase</li>
+                        <li>MongoDB</li>
+                        <li>PostgreSQL</li>
+                        <li>Netlify Functions</li>
+                        <li>Express.js</li>
+                    </ul>
                 </div>
                 <div class="skill-category">
-                    <strong>Networking & Infrastructure:</strong>
-                    CCNA (In Progress), CompTIA A+ (In Progress), Network Configuration, System Administration
+                    <h4>Tools & Technologies</h4>
+                    <ul class="skill-list">
+                        <li>Git / GitHub</li>
+                        <li>VS Code / Xcode</li>
+                        <li>Figma</li>
+                        <li>Cisco Packet Tracer</li>
+                        <li>Docker</li>
+                    </ul>
                 </div>
             </div>
         </section>
 
-        <section>
-            <h2>PROFESSIONAL EXPERIENCE</h2>
+        <!-- Projects -->
+        <section class="cv-section">
+            <h2 class="section-title">Key Projects</h2>
             
-            <div style="margin-bottom: 25px;">
-                <div class="job-title">Mobile App Developer (Freelance)</div>
-                <div class="company">Self-Employed</div>
-                <div class="date">2023 - Present</div>
-                <ul>
-                    <li>Developing cross-platform mobile applications using React Native and Flutter</li>
-                    <li>Integrating AI/ML models and ChatGPT API into mobile applications</li>
-                    <li>Building scalable, user-centric solutions for iOS and Android platforms</li>
-                    <li>Contributing to open-source projects including JustEat/Takeaway PIE</li>
-                    <li>Implementing Firebase and AWS services for backend infrastructure</li>
-                </ul>
+            <div class="project-item">
+                <h3 class="project-title">Mobile App Development (In Progress)</h3>
+                <p class="project-tech">React Native, Firebase, AI Integration</p>
+                <p class="project-description">
+                    Developing a full-featured mobile application with AI capabilities. Building intelligent mobile 
+                    experiences with React Native and Flutter, integrating ML models for enhanced user functionality.
+                </p>
             </div>
 
-            <div style="margin-bottom: 25px;">
-                <div class="job-title">Delivery Rider</div>
-                <div class="company">Uber Eats, Deliveroo, Just Eat</div>
-                <div class="date">2022 - Present</div>
-                <ul>
-                    <li>Managing flexible work schedule while pursuing technical certifications and freelance projects</li>
-                    <li>Developing time management and customer service skills</li>
-                </ul>
+            <div class="project-item">
+                <h3 class="project-title">News API Web Application</h3>
+                <p class="project-tech">React, Netlify Functions, Serverless Architecture</p>
+                <p class="project-description">
+                    Built a React-based web application featuring news API integration with serverless backend.
+                    Implemented modern architecture patterns for scalable and maintainable codebase.
+                </p>
+                <a href="https://github.com/AZEEMAZAM1" target="_blank" class="project-link">View on GitHub <i class="fas fa-arrow-right"></i></a>
             </div>
 
-            <div>
-                <div class="job-title">Tailor / Customer Service</div>
-                <div class="company">Black Beauty Cosmetics, Catford</div>
-                <div class="date">2021 - 2022</div>
-                <ul>
-                    <li>Provided customer service and tailoring services</li>
-                    <li>Managed client relationships and custom orders</li>
-                </ul>
+            <div class="project-item">
+                <h3 class="project-title">Open Source Contributions - Just Eat Takeaway</h3>
+                <p class="project-tech">TypeScript, Component Libraries</p>
+                <p class="project-description">
+                    Active contributor to PIE Design System by Just Eat Takeaway. Contributing to component 
+                    development and documentation for enterprise-level design systems.
+                </p>
+                <a href="https://github.com/justeattakeaway/pie" target="_blank" class="project-link">View Contributions <i class="fas fa-arrow-right"></i></a>
+            </div>
+
+            <div class="project-item">
+                <h3 class="project-title">Portfolio Website</h3>
+                <p class="project-tech">HTML, CSS, JavaScript</p>
+                <p class="project-description">
+                    Designed and developed a professional portfolio website showcasing projects and skills.
+                    Implemented responsive design with classic CV-style layout.
+                </p>
+                <a href="https://azeem.onl" target="_blank" class="project-link">Visit Website <i class="fas fa-arrow-right"></i></a>
             </div>
         </section>
 
-        <section>
-            <h2>EDUCATION</h2>
+        <!-- Certifications -->
+        <section class="cv-section">
+            <h2 class="section-title">Certifications & Training</h2>
+            <div class="cert-item">
+                <span class="cert-name">Cisco CCNA (Cisco Certified Network Associate)</span>
+                <span class="cert-status">In Progress</span>
+            </div>
+            <div class="cert-item">
+                <span class="cert-name">CompTIA A+</span>
+                <span class="cert-status">In Progress</span>
+            </div>
+            <div class="cert-item">
+                <span class="cert-name">BSc (Hons) Computer Science</span>
+                <span class="cert-status">Completed 2024</span>
+            </div>
+        </section>
+
+        <!-- Work Experience -->
+        <section class="cv-section">
+            <h2 class="section-title">Work Experience</h2>
             
-            <div style="margin-bottom: 20px;">
-                <h3>BSc (Hons) Computer Science</h3>
-                <div class="company">London South Bank University (LSBU)</div>
-                <div class="date">2024 Graduate</div>
-                <p style="opacity: 0.8; margin-top: 8px;">Specialized in mobile application development, software engineering, and computer science fundamentals</p>
+            <div class="cv-item">
+                <div class="cv-item-header">
+                    <span class="cv-item-title">Delivery Partner</span>
+                    <span class="cv-item-date">2022 - Present</span>
+                </div>
+                <p class="cv-item-subtitle">Uber Eats, Deliveroo, Just Eat | London, UK</p>
+                <div class="cv-item-description">
+                    <ul>
+                        <li>Managing flexible work schedule while pursuing IT certifications</li>
+                        <li>Developed strong time management and customer service skills</li>
+                        <li>Maintained high customer satisfaction ratings across platforms</li>
+                    </ul>
+                </div>
             </div>
 
-            <div>
-                <h3>Certifications (In Progress)</h3>
-                <ul>
-                    <li>CCNA (Cisco Certified Network Associate)</li>
-                    <li>CompTIA A+ Certification</li>
-                </ul>
-            </div>
-        </section>
-
-        <section>
-            <h2>MAJOR PROJECTS</h2>
-            
-            <div style="margin-bottom: 20px;">
-                <h3>Mobile Application in Development</h3>
-                <div class="date">2024 - Present</div>
-                <p style="opacity: 0.8;">Developing an innovative mobile application using React Native with AI integration and ML model implementation. Focus on creating a scalable solution for iOS and Android platforms.</p>
-            </div>
-
-            <div style="margin-bottom: 20px;">
-                <h3>Open Source Contributions</h3>
-                <div class="date">2023 - Present</div>
-                <p style="opacity: 0.8;">Active contributor to JustEat/Takeaway PIE project. Contributing to codebase improvements and feature development.</p>
-            </div>
-
-            <div>
-                <h3>Portfolio Website</h3>
-                <div class="date">2024</div>
-                <p style="opacity: 0.8;">Designed and developed professional portfolio website (azeem.onl) showcasing projects and technical skills. Built with modern web technologies and deployed on custom domain.</p>
+            <div class="cv-item">
+                <div class="cv-item-header">
+                    <span class="cv-item-title">Customer Service / Tailor</span>
+                    <span class="cv-item-date">Previous</span>
+                </div>
+                <p class="cv-item-subtitle">Black Beauty Cosmetics | Catford, London</p>
+                <div class="cv-item-description">
+                    <ul>
+                        <li>Provided excellent customer service and support</li>
+                        <li>Handled cash transactions and inventory management</li>
+                        <li>Developed strong communication and interpersonal skills</li>
+                    </ul>
+                </div>
             </div>
         </section>
 
-        <section>
-            <h2>ADDITIONAL INFORMATION</h2>
-            <ul>
-                <li><strong>Languages:</strong> English (Fluent), Urdu (Native)</li>
-                <li><strong>Work Authorization:</strong> Authorized to work in the United Kingdom</li>
-                <li><strong>Interests:</strong> Mobile app development, AI/ML integration, Network administration, Open-source contribution, Technology innovation</li>
-                <li><strong>GitHub:</strong> 74 repositories demonstrating diverse technical projects</li>
-                <li><strong>Professional Network:</strong> 500+ LinkedIn connections, 967 followers</li>
-            </ul>
+        <!-- Contact -->
+        <section class="cv-section">
+            <h2 class="section-title">Contact Information</h2>
+            <div class="contact-grid">
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <p><a href="mailto:aforazeem5@gmail.com">aforazeem5@gmail.com</a></p>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <p><a href="tel:+447362299549">07362299549</a></p>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-linkedin"></i>
+                    <p><a href="https://linkedin.com/in/muhammad-azeem5" target="_blank">linkedin.com/in/muhammad-azeem5</a></p>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-github"></i>
+                    <p><a href="https://github.com/AZEEMAZAM1" target="_blank">github.com/AZEEMAZAM1</a></p>
+                </div>
+            </div>
         </section>
+
+        <!-- Footer -->
+        <footer class="cv-footer">
+            <p class="footer-text">References available upon request</p>
+            <div class="social-links">
+                <a href="https://github.com/AZEEMAZAM1" target="_blank" class="social-link"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/in/muhammad-azeem5" target="_blank" class="social-link"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </footer>
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>

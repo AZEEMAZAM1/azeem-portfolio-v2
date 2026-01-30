@@ -55,3 +55,31 @@ document.addEventListener('keydown', function(e) {
         popup.classList.remove('active');
     }
 });
+
+
+// Highlight active section in sidebar navigation
+function highlightActiveSection() {
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('.nav-menu a');
+    
+    let currentSection = '';
+    
+    sections.forEach(section => {
+        const sectionTop = section.offsetTop - 100;
+        const sectionHeight = section.offsetHeight;
+        if (window.scrollY >= sectionTop && window.scrollY < sectionTop + sectionHeight) {
+            currentSection = section.getAttribute('id');
+        }
+    });
+    
+    navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === '#' + currentSection) {
+            link.classList.add('active');
+        }
+    });
+}
+
+// Add scroll event listener for active section highlighting
+window.addEventListener('scroll', highlightActiveSection);
+window.addEventListener('load', highlightActiveSection);

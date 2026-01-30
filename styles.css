@@ -445,3 +445,99 @@ body::after {
         font-size: 40px;
     }
 }
+
+
+/* Sidebar Navigation Menu */
+.sidebar-nav {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 200px;
+    height: 100vh;
+    background: var(--white);
+    border-right: 2px solid var(--black);
+    padding: 20px 0;
+    z-index: 1000;
+    overflow-y: auto;
+}
+
+.sidebar-header {
+    padding: 15px 20px;
+    border-bottom: 1px solid var(--gray-lighter);
+    margin-bottom: 10px;
+}
+
+.nav-title {
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--black);
+}
+
+.nav-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-menu li {
+    margin: 0;
+}
+
+.nav-menu a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 20px;
+    color: var(--gray-dark);
+    text-decoration: none;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    border-left: 3px solid transparent;
+}
+
+.nav-menu a:hover {
+    background: var(--gray-lightest);
+    color: var(--black);
+    border-left-color: var(--black);
+}
+
+.nav-menu a i {
+    width: 18px;
+    text-align: center;
+    font-size: 14px;
+}
+
+/* Adjust main container for sidebar */
+.container {
+    margin-left: 220px;
+    max-width: calc(100% - 240px);
+}
+
+/* Make section titles clickable style */
+.section-title {
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.section-title:hover {
+    color: var(--gray-medium);
+}
+
+/* Smooth scroll behavior */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Responsive - hide sidebar on mobile */
+@media (max-width: 768px) {
+    .sidebar-nav {
+        display: none;
+    }
+    
+    .container {
+        margin-left: 0;
+        max-width: 100%;
+    }
+}

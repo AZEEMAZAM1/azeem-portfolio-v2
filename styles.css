@@ -541,3 +541,12 @@ html {
         max-width: 100%;
     }
 }
+
+
+/* Active navigation link style */
+.nav-menu a.active {
+    background: var(--gray-lightest);
+    color: var(--black);
+    border-left-color: var(--black);
+    font-weight: 600;
+}
